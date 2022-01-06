@@ -420,6 +420,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22.9)),
+    url(images/contact.jpg);
+    background-size: cover;
 }
 
 .contact-wrapper{
@@ -430,16 +435,18 @@ header{
 }
 
 .contact-left{
-    width: 35%;
+    width: 45%;
     background: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22.9)),
     url(images/contact.jpg);
     background-size: cover;
+    border-radius: 10px;
 }
 
 .contact-right{
-    width: 65%;
-    background-color: #eee;
+    width: 50%;
+    background-color: #acacac;
     padding: 1rem 3rem 3rem 3rem;
+    border-radius: 10px;
 }
 
 .section-contact h1{
