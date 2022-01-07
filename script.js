@@ -10,8 +10,8 @@ document.querySelector("#js").addEventListener("change", atualizarPreco)
 document.querySelector("#layout-yes").addEventListener("change", atualizarPreco)
 document.querySelector("#layout-no").addEventListener("change", atualizarPreco)
 document.querySelector("#deadline").addEventListener("change", function () {
-    const prazo = document.querySelector("#deadline").value
-    document.querySelector("label[for=deadline]").innerHTML = `Deadline: ${deadline} semanas`
+    const deadline = document.querySelector("#deadline").value
+    document.querySelector("label[for=deadline]").innerHTML = `Deadline: ${deadline} Weeks`
     atualizarPreco()
 })
 
