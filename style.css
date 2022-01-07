@@ -16,12 +16,16 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     /* background-color: red; */
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -32,6 +36,7 @@
 
 .show-menu .hamburguer{
     right: 17rem;
+
 }
 
 .line{
@@ -190,6 +195,7 @@ header{
     right: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -600,6 +606,62 @@ header{
     font: lighter;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .5);
     border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+    justify-content: space-between;
+}
+
+.social-list ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+#link-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #7F00FF;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: linear-gradient(to right, #E100FF, #7F00FF);   
+    font-family: var(--font-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .8rem;
+    box-shadow: 0 0.1rem  0.1rem #000009;
 }
 
 
