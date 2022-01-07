@@ -184,7 +184,7 @@
             <h1>Get your Budget!</h1>
             <form action="">
                 <label for="qtty">How many pages do you need?</label>
-                <input type="number" min="1" name="qtty" id="qty">
+                <input type="number" min="1" name="qtty" id="qtty">
                 <label for="js">Do you need any Script JS?</label>
                 <input type="checkbox" name="js" id="js">
                 <label>Layout?</label>
@@ -199,7 +199,8 @@
                     </div>
                 </div>
                 <label for="deadline">What's your deadline?</label>
-                <input type="range" name="deadline" id="deadline">
+                <input type="range" name="deadline" id="deadline" min="1" max="10">
+                <label id="price">R$ 0,00</label>
                 <button class="btn btn-budget" type="submit">Send</button>
             </form>
         </div>
